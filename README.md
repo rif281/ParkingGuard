@@ -1,5 +1,12 @@
 # ParkingGuard
-Real-Time vehicle protection system. 
+Parking Guard is a Real-Time vehicle protection system. 
+
+How It works:
+1. Vibration sensors are sampled at a high frequency by the Arduino. 
+2. Once an impact is detected, information about the impact's location (forward/backward) is transmitted to the Raspberry Pi via UART communication.
+3. Relevant camera and neural network start operating to identify pre-defined objects (vehicles/humans).
+4. An email is sent to the user containing information (time and date, impact location) and images of the offending object.
+
 
 System structor:
 
